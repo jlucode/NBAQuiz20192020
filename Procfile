@@ -1,1 +1,1 @@
-web: gunicorn NBAquiz.wsgi --log-file -
+web: gunicorn 'NBAquiz.wsgi'
