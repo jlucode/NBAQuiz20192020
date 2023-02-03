@@ -1,0 +1,83 @@
+{% load static %} 
+
+<html>
+	<head>	
+		<link rel="stylesheet" type="text/css" href="{% static 'quizzes/style2.css' %}">
+	</head>
+
+
+	
+{% if selected_choice == ans1 %}
+	<h1 class="customtextcorrect">Correct! Good job.</h1>
+	<body class= "correct1">
+{% elif selected_choice == ans2 %}
+	<h1 class="customtextcorrect">Correct! Good job.</h1>
+	<body class= "correct2">
+{% elif selected_choice == ans3 %}
+	<h1 class="customtextcorrect">Correct! Good job.</h1>
+	<body class= "correct3">
+{% elif selected_choice == ans4 %}
+	<h1 class="customtextcorrect">Correct! Good job.</h1>
+	<body class= "correct4">
+{% elif selected_choice == ans5 %}
+	<h1 class="customtextcorrect">Correct! Good job.</h1>
+	<body class= "correct5">
+{% elif selected_choice == ans6 %}
+	<h1 class="customtextcorrect">Correct! Good job.</h1>
+	<body class= "correct6">
+{% elif selected_choice == ans7 %}
+	<h1 class="customtextcorrect">Correct! Good job.</h1>
+	<body class= "correct7">
+{% elif selected_choice == ans8 %}
+	<h1 class="customtextcorrect">Correct! Good job.</h1>
+	<body class= "correct8">
+{% elif selected_choice == ans9 %}
+	<h1 class="customtextcorrect">Correct! Good job.</h1>
+	<body class= "correct9">
+{% elif selected_choice == ans10 %}
+	<h1 class="customtextcorrect">Correct! Good job.</h1>
+	<body class= "correct10">
+{% elif selected_choice == ans11 %}
+	<h1 class="customtextcorrect">Correct! Good job.</h1>
+	<body class= "correct11">
+{% elif selected_choice == ans12 %}
+	<h1 class="customtextcorrect">Correct! Good job.</h1>
+	<body class= "correct12">
+{% else %} 
+	<h1 class="customtextwrong">Wrong!! Please proceed to the next question.</h1>
+	<body class="wrong"> 
+{% endif %}
+	
+	
+
+	
+
+<p style="color:white;font-size: 24px;text-align: left;"> 
+Current Score: {{ score }}% out of 100%
+</p>
+
+
+
+{% with next=first.get_next_by_pub_date %}
+	{% if next %}
+		<a href ="{% url 'quizzes:detail' next.id %}"; style= 'font-size: 20px; color:white;'> Next Question </a>
+	{% else %}
+		<a href ="{% url 'quizzes:final_score' last.id %}"; style= 'font-size: 20px; color:white;'> Next Question </a>
+	{% endif %}
+{% endwith %}
+
+
+
+
+
+
+
+
+	
+
+
+
+
+		</body>
+
+</html>

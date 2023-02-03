@@ -1,0 +1,39 @@
+{% load static %}
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="{% static 'quizzes/style.css' %}">
+	</head>
+
+	<body>
+
+
+		<h style="color:gold;font-size: 50px;text-align: justify;"><b>NBA QUIZ - 2019/2020 Season</b></h>
+
+		<h2 style="color:gold;font-size: 24px;text-align: left;"><br/>Welcome to a true test of your NBA statistical knowledge! <br/> Do NOT click your back button for accurate scoring <br/> The passing score is 80% </h2>
+
+		{% if latest_question_list %}
+			<ul>{% for question in latest_question_list %}
+				<br/><li><a href="{% url 'quizzes:detail' question.id %}" style="font-size: 20px">CLICK TO BEGIN </a></li>
+			{% endfor %}</ul>
+
+		{% else %}
+			<p>No quizzes are available.</p>	
+		{% endif %}
+		
+		
+		
+	
+	
+
+
+		
+
+
+
+
+
+
+
+	</body>
+</html>

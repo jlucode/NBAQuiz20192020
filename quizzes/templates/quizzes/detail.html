@@ -1,0 +1,38 @@
+ {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'quizzes/style1.css' %}">
+
+<h1 style="color:Tomato; text-align:right; font-size:29px">{{ question.label }}</h1>
+
+
+{% if error_message %}
+	<p><strong>{{ error_message }}</strong></p>
+{% endif %}
+
+<div class = "myalignment">
+<form style="text-align:right;" action="{% url 'quizzes:vote' question.id %}" method="post">
+{% csrf_token %}
+{% for answer in question.answer_set.all %}
+	<input type="radio" name="answer" id="answer{{ forloop.counter }}" value="{{ answer.id }}">
+	<label style="color:White;" for ="answer{{ forloop.counter }}">{{ answer.text }}</label>
+<br>
+{% endfor %}
+
+<br>
+<input type="submit" value= "Submit Answer">
+</form>
+</div>
+
+
+
+<html>
+<head>
+<style>
+.myalignment {
+	display: inline-block;
+	float: right;
+	text-align: left;
+	font-size: 20px;
+}
+</style>
+</head>
+<body>

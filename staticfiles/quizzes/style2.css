@@ -1,0 +1,125 @@
+/* Stylesheet for vote.html */
+
+
+/* Background Images for Correct Answers */
+body.correct1{
+	background: url("images/JamesHardenPic.gif")no-repeat;
+	background-size: 100% auto;
+	height: 100 px;
+	width: 100 px;
+	color: white;
+}
+
+body.correct2{
+	background: url("images/LebronJamesPic.gif")no-repeat;
+	background-size: 100% auto;
+	height: 100 px;
+	width: 100 px;
+	color: white;
+}
+
+body.correct3{
+	background: url("images/AndreDrummondPic.gif")no-repeat;
+	background-size: 100% auto;
+	height: 100 px;
+	width: 100 px;
+	color: white;
+}
+
+body.correct4{
+	background: url("images/BenSimmonsPic.gif")no-repeat;
+	background-size: 100% auto;
+	height: 100 px;
+	width: 100 px;
+	color: white;
+}
+
+body.correct5{
+	background: url("images/HassanWhitesidePic.gif")no-repeat;
+	background-size: 100% auto;
+	height: 100 px;
+	width: 100 px;
+	color: white;
+}
+
+body.correct6{
+	background: url("images/SekouDeoumbouyaPic.gif")no-repeat;
+	background-size: 100% auto;
+	height: 100 px;
+	width: 100 px;
+	color: white;
+}
+
+body.correct7{
+	background: url("images/VinceCarterPic.gif")no-repeat;
+	background-size: 100% auto;
+	height: 100 px;
+	width: 100 px;
+	color: white;
+}
+
+body.correct8{
+	background: url("images/TackoFallPic.gif")no-repeat;
+	background-size: 100% auto;
+	height: 100 px;
+	width: 100 px;
+	color: white;
+}
+
+body.correct9{
+	background: url("images/GiannisAntetokounmpoPic.gif")no-repeat;
+	background-size: 100% auto;
+	height: 100 px;
+	width: 100 px;
+	color: white;
+}
+body.correct10{
+	background: url("images/MichaelJordanPic.gif")no-repeat;
+	background-size: 100% auto;
+	height: 100 px;
+	width: 100 px;
+	color: white;
+}
+
+
+body.correct11{
+	background: url("images/MichaelJordanPic.gif")no-repeat;
+	background-size: 100% auto;
+	height: 100 px;
+	width: 100 px;
+	color: white;
+}
+
+
+body.correct12{
+	background: url("images/MichaelJordanPic.gif")no-repeat;
+	background-size: 100% auto;
+	height: 100 px;
+	width: 100 px;
+	color: white;
+}
+
+
+
+
+/* Background images for incorrect answers */
+body.wrong{
+	background: url("images/MutumboPicWrong.gif")no-repeat;
+	background-size: 100% auto;
+	height: 100 px;
+	width: 100 px;
+	color: white;
+
+}
+
+
+
+
+/* Custom text for templating */
+h1.customtextcorrect {
+	color: white;
+}
+
+h1.customtextwrong {
+	color: red;
+}

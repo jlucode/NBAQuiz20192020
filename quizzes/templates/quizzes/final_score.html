@@ -1,0 +1,52 @@
+ {% load static %}
+
+<head>
+		<link rel="stylesheet" type="text/css" href="{% static 'quizzes/style.css' %}">
+	</head>
+
+	<body>
+		<p style="color:gold;font-size: 30px;text-align: left;"><b>Thank you for playing!<br> 
+		FINAL SCORE: {{ request.session.score }}% out of 100%<b>
+		</p>
+
+		<p style="color:Navy;font-size: 16px;text-align: left;">
+		Correct Answers:
+		<br>
+		<br>
+		1) James Harden - Points Per Game (PPG) leader for the 2019/2020 season
+		<br>
+		<br>
+		2) Lebron James - Assists Per Game (APG) leader for the 2019/2020 season 
+		<br>
+		<br>
+		3) Andre Drummond - Rebounds Per Game (RPG) leader for the 2019/2020 season
+		<br>
+		<br>
+		4) Ben Simmons - Steals Per Game (SPG) leader for the 2019/2020 season
+		<br>
+		<br>
+		5) Hassan Whiteside - Blocks Per Game (BPG) leader for the 2019/2020 season
+		<br>
+		<br>
+		6) Sekou Doumbouya - youngest active player in the NBA for 2019/2020 season
+		<br>
+		<br>
+		7) Vince Carter - oldest active player in the NBA for 2019/2020 season
+		<br>
+		<br>
+		8) Tacko Fall - tallest active player in the NBA for 2019/2020 season
+		<br>
+		<br>
+		9) Giannis Antetokounmpo - foreign active NBA player has the most Points Per Game for the 2019/2020 season
+		<br>
+		<br>
+		10) Michael Jordan - subjectively the Greatest Player of All-Time (GOAT)
+
+		</p>
+	</body>
+
+	<br>
+	<a href ="{% url 'quizzes:index' %}"; style= 'font-size: 30px; color:gold;'> Retake Quiz! </a>
+
+
+

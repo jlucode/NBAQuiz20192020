@@ -1,0 +1,26 @@
+/* Stylesheet for detail.html */
+
+
+li a {
+	color: white;
+}
+
+body {
+	background: url("images/nbaquestionbackground.gif")no-repeat;
+	background-size: 100% auto;
+	height: 100 px;
+	width: 100 px;
+
+}
+
+<html>
+<head>
+<style>
+.myalignment {
+	display: inline-block;
+	float: left;
+	text-align: left;
+}
+</style>
+</head>
+<body>
